@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Editor IMPACTA</title>
+  <style>
+    html, body, #tldraw {
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+  <script type="module">
+    import { createApp } from 'https://esm.sh/@tldraw/tldraw'
+    const el = document.getElementById('tldraw')
+    createApp(el)
+  </script>
+</head>
+<body>
+  <div id="tldraw"></div>
+</body>
+</html>
