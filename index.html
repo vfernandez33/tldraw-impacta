@@ -3,21 +3,24 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Editor IMPACTA</title>
+  <title>Editor IMPACTA (respaldo)</title>
   <style>
     html, body, #tldraw {
       margin: 0;
       height: 100%;
       width: 100%;
+      font-family: 'Century Gothic', sans-serif;
     }
   </style>
-  <script type="module">
-    import { createApp } from 'https://esm.sh/@tldraw/tldraw'
-    const el = document.getElementById('tldraw')
-    createApp(el)
-  </script>
+  <script src="tldraw.umd.js"></script>
 </head>
 <body>
   <div id="tldraw"></div>
+  <script>
+    window.onload = function () {
+      const el = document.getElementById('tldraw');
+      window.tldraw.createApp(el);
+    };
+  </script>
 </body>
 </html>
